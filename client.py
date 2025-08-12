@@ -1,7 +1,7 @@
 from openai import OpenAI
 
 client = OpenAI(
-    api_key="841062a1-3406-4d55-a5f7-007b109a0b1c",
+    api_key="Use your API Key here",
     base_url="https://api.sambanova.ai/v1",
 )
 
@@ -11,5 +11,6 @@ response = client.chat.completions.create(
     temperature=0.1,
     top_p=0.1
 )
+
 
 print(response.choices[0].message.content)
