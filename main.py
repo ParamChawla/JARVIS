@@ -28,7 +28,7 @@ def speak(text):
 # AI processing using SambaNova API
 def aiProcess(command):
     client = OpenAI(
-        api_key="841062a1-3406-4d55-a5f7-007b109a0b1c",  # Your SambaNova key
+        api_key="Use your API Key here",  
         base_url="https://api.sambanova.ai/v1"
     )
 
@@ -94,3 +94,4 @@ if __name__ == "__main__":
                     processCommand(command)
         except Exception as e:
             print(f"Error: {e}")
+
